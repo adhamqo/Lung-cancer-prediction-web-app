@@ -1,0 +1,117 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="{{ url_for('static', filename='lungs.png') }}" alt="Lungs Icon" class="icon">
+                    </a>
+                    WeCare Labs
+                </h1>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Predict Your Lung Cancer Risk</h2>
+            <p>Enter your information below to get a prediction.</p>
+            <a href="/form" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-item">
+                <img src="{{ url_for('static', filename='personlized.png') }}" alt="Feature 1" class="icon1">
+                <h3>Personalized Prediction</h3>
+                <p>Get a personalized prediction of your lung cancer risk based on your health data.</p>
+            </div>
+            <div class="feature-item">
+                <img src="{{ url_for('static', filename='easytouse.png') }}" alt="Feature 2" class="icon1">
+                <h3>Easy to Use</h3>
+                <p>Our application is user-friendly and provides quick results.</p>
+            </div>
+            <div class="feature-item">
+                <img src="{{ url_for('static', filename='ScientificallyValidated.png') }}" alt="Feature 3" class="icon1">
+                <h3>Scientifically Validated</h3>
+                <p>Our prediction model is based on scientifically validated data and research.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Fill Out the Form</h3>
+                    <p>Fill out the form with your health information.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Receive Prediction</h3>
+                    <p>Receive a prediction of your lung cancer risk instantly.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Take Precautions</h3>
+                    <p>Based on your result, take necessary precautions or consult a healthcare professional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <section id="contact">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h2>Visit Us</h2>
+                        <p>26 July Street, The Touristic Zone, 6th of October City, Giza 12568 Egypt</p>
+                    </div>
+                    <div class="footer-column">
+                        <h2>Call Us</h2>
+                        <p>Reserve an appointment: 16780</p>
+                        <p>WhatsApp: 01289294000</p>
+                        <p>Branch Emal:</p>
+                        <p>6th of October: <a href="mailto:Experts.oc@WeCareLabs.net">Experts.oc@WeCareLabs.net</a></p>
+                        <p>For Contact us: <a href="mailto:info@WeCareLabs.net">info@WeCareLabs.net</a></p>
+                        <p>Emergency ambulance: 16780</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024: WeCare Labs. All rights reserved.</p>
+                    <button onclick="scrollToTop()" class="scroll-to-top">Back to Top</button>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
