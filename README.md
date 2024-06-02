@@ -175,7 +175,8 @@ Verifying the Deployment
 
 Additional Tips
 
-- Activating the Virtual Environment: Before installing the required packages, activate the virtual environment using the following command:
+- Activating the Virtual Environment: Before installing the required packages, activate the virtual environment using the following command: .\scripts\activate
+  
 
 ## File Structure
 ```
